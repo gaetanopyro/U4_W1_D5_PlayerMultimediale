@@ -1,3 +1,4 @@
+import entites.Immagine;
 import entites.RegistrazioneAudio;
 import entites.Video;
 
@@ -29,7 +30,16 @@ public class Main {
         grafica.menoLuminosità();
         grafica.start();
         grafica.plusLuminosità();
-
+        Immagine img = new Immagine("Album:", 10);
+        img.show();
+        img.menoLuminosità();
+        img.show();
+        img.plusLuminosità();
+        img.show();
+        img.menoLuminosità();
+        img.show();
+        img.plusLuminosità();
+        
 
     }
 }
