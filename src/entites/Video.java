@@ -1,8 +1,10 @@
 package entites;
 
+import interfaces.AbbassaLuminosità;
+import interfaces.AumentaLuminosità;
 import interfaces.Play;
 
-public class Video extends ElementoMultimediale implements Play {
+public class Video extends ElementoMultimediale implements Play, AbbassaLuminosità, AumentaLuminosità {
     private int durata;
     private int volume;
     private int luminosita;
@@ -58,11 +60,13 @@ public class Video extends ElementoMultimediale implements Play {
         return 0;
     }
 
-    public int abbassaLuminosità() {
+    @Override
+    public int menoLuminosità() {
         return --luminosita;
     }
 
-    public int aumentaLuminosità() {
+    @Override
+    public int plusLuminosità() {
         return ++luminosita;
     }
 }

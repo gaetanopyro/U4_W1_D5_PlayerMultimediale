@@ -20,15 +20,15 @@ public class Main {
         song.plusVolume();
         Video grafica = new Video("Titolo traccia", 1, 10, 10);
         grafica.start();
-        grafica.abbassaLuminosità();
+        grafica.menoLuminosità();
         grafica.start();
-        grafica.abbassaLuminosità();
+        grafica.menoLuminosità();
         grafica.start();
-        grafica.aumentaLuminosità();
+        grafica.plusLuminosità();
         grafica.start();
-        grafica.abbassaLuminosità();
+        grafica.menoLuminosità();
         grafica.start();
-        grafica.aumentaLuminosità();
+        grafica.plusLuminosità();
 
 
     }
