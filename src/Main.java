@@ -52,6 +52,7 @@ public class Main {
             } else {
                 System.out.println(" riprova.");
             }
+            scanner.close();
         }
     }
 }
