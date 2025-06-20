@@ -1,4 +1,5 @@
 import entites.RegistrazioneAudio;
+import entites.Video;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +18,17 @@ public class Main {
         song.plusVolume();
         song.start();
         song.plusVolume();
+        Video grafica = new Video("Titolo traccia", 1, 10, 10);
+        grafica.start();
+        grafica.abbassaLuminosità();
+        grafica.start();
+        grafica.abbassaLuminosità();
+        grafica.start();
+        grafica.aumentaLuminosità();
+        grafica.start();
+        grafica.abbassaLuminosità();
+        grafica.start();
+        grafica.aumentaLuminosità();
 
 
     }

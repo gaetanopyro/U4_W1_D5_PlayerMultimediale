@@ -1,14 +1,18 @@
 package entites;
 
-public class Video extends ElementoMultimediale {
+import interfaces.Play;
+
+public class Video extends ElementoMultimediale implements Play {
     private int durata;
     private int volume;
+    private int luminosita;
 
 
-    public Video(String titolo, int durata, int volume) {
+    public Video(String titolo, int durata, int volume, int luminosita) {
         super(titolo);
         this.durata = durata;
         this.volume = volume;
+        this.luminosita = luminosita;
     }
 
     public int getDurata() {
@@ -34,6 +38,31 @@ public class Video extends ElementoMultimediale {
         } else {
             System.out.println("Volume assente");
         }
-        ;
+
+    }
+
+    public int getLuminosita() {
+        return luminosita;
+    }
+
+    public void setLuminosita(int luminosita) {
+        this.luminosita = luminosita;
+    }
+
+
+    @Override
+    public int start() {
+        System.out.println("Stai ascoltando: " + titolo + " " + "- durata: " + durata + " " + "- volume: " + volume + " !".repeat(volume) + " " + "luminosità: " + luminosita + " *".repeat(luminosita));
+        for (int i = 0; i < durata; i++) {
+        }
+        return 0;
+    }
+
+    public int abbassaLuminosità() {
+        return --luminosita;
+    }
+
+    public int aumentaLuminosità() {
+        return ++luminosita;
     }
 }

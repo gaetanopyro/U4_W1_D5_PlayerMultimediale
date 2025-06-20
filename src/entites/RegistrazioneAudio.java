@@ -41,6 +41,7 @@ public class RegistrazioneAudio extends ElementoMultimediale implements Play, Ab
 
     }
 
+
     @Override
     public int start() {
         System.out.println("Stai ascoltando: " + titolo + " " + "- durata: " + durata + " " + "- volume: " + volume + " !".repeat(volume));
