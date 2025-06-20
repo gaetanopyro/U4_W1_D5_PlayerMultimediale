@@ -17,7 +17,7 @@ public class Main {
 
         int i = 0;
         while (i < 5) {
-            System.out.println("Inserisci il nome del file multimediale " + (i + 1) + " - scegli il tipo:");
+            System.out.println("Inserisci il numero del file multimediale " + (i + 1));
             String text = scanner.nextLine();
 
             if (text.equals("0") || text.equals("1") || text.equals("2")) {
@@ -52,7 +52,6 @@ public class Main {
             } else {
                 System.out.println(" riprova.");
             }
-            scanner.close();
         }
     }
 }
